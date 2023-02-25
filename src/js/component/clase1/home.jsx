@@ -1,7 +1,7 @@
 import React from "react"; //React no lo reconoce como componente sin esta línea
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import rigoImage from "../../../img/rigo-baby.jpg";
 
 //importamos otros componentes que nos interesen
 import Card from "./card.jsx";
