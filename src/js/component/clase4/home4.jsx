@@ -14,11 +14,12 @@ const Home4 = () => {
     })
 
     const obtenerNombre = (evento) => {
+        console.log(evento.target.value)
         setName(evento.target.value)
     }
 
     const obtenerStateNombre = () => {
-        setState({ ...state, name: name }) // por qué hacerlo así?
+        setState({ ...state, name: name }) // por qué hacerlo así? dejamos las demás propiedades iguales y se cambian las que interesen
     }
 
     const cambiarPorTrue = () => {
