@@ -16,7 +16,7 @@ const TrafficLight = () => {
         <div className={`yellow-light` + `${active==="yellow-light"? " yellow-light-active" : ""}`} onClick={(e)=>{setActive(e.target.className)}}>Yellow</div>
         <br />
         <br />
-        <div className={`green-light` + `${active==="green-light"? " green-light-active" : ""}`} onClick={(e)=>{setActive(e.target.className)}}>Yellow</div>       
+        <div className={`green-light` + `${active==="green-light"? " green-light-active" : ""}`} onClick={(e)=>{setActive(e.target.className)}}>Green</div>       
 
     </>)
 }
