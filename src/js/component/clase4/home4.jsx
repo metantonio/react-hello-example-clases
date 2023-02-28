@@ -30,7 +30,7 @@ const Home4 = () => {
     }, [state.name, state.isTrue, state.obj.apellido])
 
     return (
-        <div className={`btn ${state.isTrue ? "black" : "white"}`}>
+        <div className={`btn ${state.isTrue ? "black2" : "white2"}`}>
             <h1>Clase 3</h1>
             <input type="text" placeholder="Coloque su nombre"
                 onChange={(e) => { obtenerNombre(e) }} />

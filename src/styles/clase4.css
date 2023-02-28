@@ -1,7 +1,11 @@
-.black {
+.black2 {
     background: black;
 }
 
-.white {
+.black2:hover {
+    background: green;
+}
+
+.white2 {
     background: white;
 }
