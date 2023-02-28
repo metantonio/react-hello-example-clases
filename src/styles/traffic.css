@@ -1,0 +1,23 @@
+.red-light{
+    background: red;
+}
+
+.yellow-light{
+    background: yellow;
+}
+
+.green-light{
+    background: green;
+}
+
+.red-light-active {
+    box-shadow: 25px 25px 25px 25px rgb(255, 133, 133)
+}
+
+.yellow-light-active {
+    box-shadow: 25px 25px 25px 25px rgb(245, 255, 130)
+}
+
+.green-light-active {
+    box-shadow: 25px 25px 25px 25px rgb(245, 255, 130)
+}
