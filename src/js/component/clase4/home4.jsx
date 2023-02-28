@@ -27,7 +27,7 @@ const Home4 = () => {
 
     useEffect(() => { //un useEffect se ejecuta siempre que el componente aparezca por primera vez
         console.log("Se reenderizó de nuevo el componente", state)
-    }, [state.name, state.isTrue, state.obj.apellido]) //y este se ejecutará de nuevo cuando el objeto cambie
+    }, [state.name, state.isTrue, state.obj.apellido]) //y este se ejecutará de nuevo cuando los estados cambien
 
     return (
         <div className={`btn ${state.isTrue ? "black2" : "white2"}`}>
