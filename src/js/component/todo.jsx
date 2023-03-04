@@ -20,12 +20,19 @@ const ToDo = () => {
 			})
 		)
 	}
-	
+	//Esto es lo que hace la función eliminar:
+	//Imaginemos que tenemos el arreglo = ["hola", "juan", "pedro"]
+	//										 0		 1		  2		
+
+	//eliminarTarea(1)=> arreglo[1] = "Juan" => este no irá al arreglo nuevo
+	//por lo tanto el arreglo que resultará es ["hola", "pedro"]
+
+
 	//let contador=arrTemp.length
 
-	useEffect(() => { 
+	useEffect(() => {
 		console.log("se reenderizó el componente Home")
- }, [arrTemp])
+	}, [arrTemp])
 
 	return (
 		<div className="container justify-content-center align-item-center">
@@ -45,20 +52,22 @@ const ToDo = () => {
 			</div>
 			<div className="row d-flex justify-content-center">
 				{arrTemp && arrTemp.length > 0 ?
-					<>{arrTemp.map((item, index) => {											
-						return <li key={index} className="d-flex justify-content-between">
-							{index+1}-{item.tarea} - <span>{item.done ? "Realizada" : "Por Hacer"}</span>
-							<button
-								className="ocultar"
-								type="button"
-								onClick={() => {
-									eliminarTarea(index)
-								}}
-							>
-								Eliminar
-							</button>
-						</li>
-					})}</>
+					<>
+						{arrTemp.map((item, index) => {
+							return <li key={index} className="d-flex justify-content-between">
+								{index + 1}-{item.tarea} - <span>{item.done ? "Realizada" : "Por Hacer"}</span>
+								<button
+									className="ocultar"
+									type="button"
+									onClick={() => {
+										eliminarTarea(index)
+									}}
+								>
+									Eliminar
+								</button>
+							</li>
+						})}
+					</>
 					:
 					<><h1>No hay Tareas</h1>
 					</>

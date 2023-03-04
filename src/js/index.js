@@ -12,7 +12,8 @@ import Home3 from "./component/clase3/home3.jsx";
 import Home4 from "./component/clase4/home4.jsx";
 import ToDo from "./component/todo.jsx";
 import TrafficLight from "./component/traffic.jsx";
+import Repaso from "./component/repaso.jsx";
 
 //render your react application
-ReactDOM.render(<ToDo/>, document.querySelector("#app"));
+ReactDOM.render(<Repaso />, document.querySelector("#app"));
 
